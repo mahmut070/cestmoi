@@ -1,0 +1,170 @@
+// *************************************
+//
+// Navigation
+// -> Reusable navigation module
+//
+// *************************************
+
+.Navigation {
+  @include clearfix;
+  text-align: center;
+}
+
+
+.Navigation ul {
+  margin: 0; 
+}
+
+.nav-Full{
+  background: rgba(187, 187, 187, 0.4);
+  margin-top: 110px;
+  margin-bottom: 60px;
+}
+
+
+
+// -------------------------------------
+// Module specific variables
+// -------------------------------------
+
+// Module-variableName
+
+// -------------------------------------
+// Modifiers
+// -------------------------------------
+
+// -------------------------------------
+// States
+// -------------------------------------
+
+.Navigation-list {
+	display: block;
+	margin: 0px;
+
+}
+
+.Navigation-link.is-active {
+  text-decoration: underline;
+}
+
+// -------------------------------------
+// Context
+// -------------------------------------
+
+// .has-module
+
+// -------------------------------------
+// Submodules
+// -------------------------------------
+
+// ----- List item ----- //
+
+.Navigation-listItem {
+  display: block;
+  float: left;
+  //margin: 0 rem(6px);
+  padding: 10px 13px 0px 11px;
+  height: 40px;
+  border-right: 1px solid #ffffff;
+  &:first-of-type {
+    margin-left: 0;
+  }
+  &:last-of-type {
+    margin-right: 0;
+    border-right: 0px;
+  }
+}
+
+.Navigation > ul >.Navigation-listItem:nth-of-type(4){
+  margin-right: 32%;
+}
+
+.Navigation > ul >.Navigation-listItem:nth-of-type(5){
+  border-left: 1px solid #ffffff;
+}
+
+// ----- Navigation link ----- //
+
+.Navigation-link {
+  text-transform: uppercase;
+  color: #5b544b;
+  font-weight: 600;
+
+}
+
+.Navigation-link--invertedBold {
+  color: $c-white; 
+  font-weight: bold;
+}
+
+
+
+
+// CSS that work on dropdown  of submenu items
+
+.Navigation-listItem--hasDropdown {
+    position: relative;
+    text-decoration: none;
+}
+
+ul.Navigation-list--dropdown {
+    background: rgba(187, 187, 187, 0.8);
+    display: block;
+    height: auto;
+    left: -2px;
+    line-height: 35px;
+    margin-top: 22px;
+    position: absolute;
+    width: 235px;
+    z-index: 9999;
+}
+
+ul.Navigation-list--dropdown li.Navigation-listItem {
+    display: block;
+    padding: 0px 2px;
+    margin: 0px auto;
+    border: 0px none;
+    float: none;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.Navigation-list.is-hidden {
+  display: none;
+}
+
+@media all and (max-width: 1000px) { 
+  ul.Navigation-list--dropdown {
+    background: rgba(187, 187, 187, 0.4);
+    border-radius: 5px;
+    border: 2px solid #6f083c;
+    box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, 0.4);
+    color: white;
+    display: block;
+    height: auto;
+    line-height: 40px;
+    margin-top: 27px;
+    position: static;
+    width: 100%;
+    z-index: 110;
+  }
+
+  ul.Navigation-list--dropdown li.Navigation-listItem {
+    display: block;
+    padding: 12px 2px;
+    margin: 0px auto;
+    border: 0px none;
+    font-size: 11px;
+    font-weight: 400;
+  }
+}
+
+
+
+
+
+@media all and (max-width: 800px) { 
+  .nav-Full{
+    margin-bottom: 35px;
+  }
+}

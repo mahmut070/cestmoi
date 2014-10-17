@@ -1,0 +1,166 @@
+.Content {
+
+}
+
+
+.home-welkom-tekst{
+	text-align: center;
+	color: #5b544b;
+	margin-bottom: 25px;
+	margin-top: -25px;
+}
+
+.home-welkom-tekst h1{
+	font-weight: normal;
+}
+
+.home-welkom-bedrijfsnaam{
+	font-weight: bold;
+	display: inline;
+}
+
+.full-bg{
+	background-color: #e6e2dd;
+	padding-top: 30px;
+	padding-bottom: 110px;
+}
+
+.full-bg-twee{
+	background-color: #e6e2dd;
+	padding-top: 30px;
+	padding-bottom: 110px;
+	margin-top: 90px;
+}
+
+.content-box-large{
+	-webkit-box-shadow: 1px 1px 22px 0px rgba(50, 50, 50, 0.54);
+	-moz-box-shadow:    1px 1px 22px 0px rgba(50, 50, 50, 0.54);
+	box-shadow:         1px 1px 22px 0px rgba(50, 50, 50, 0.54);
+	border:3px solid #ffffff;
+	img {
+		display: block;
+	}
+}
+
+.content-box{
+	height:100%;
+	position: relative;
+}
+
+.content-text {
+	width: 98%;
+	height: 29px;
+	background: rgba(0, 0, 0, 0.4);
+	position: absolute;
+	text-align: center;
+	padding-top: 4px;
+	color: #ffffff;
+	top: -11px;
+	left: 3px;
+}
+
+.afspraak-box{
+	margin-top: 46px;
+	position: relative;
+}
+
+.content-text-small {
+	width: 97%;
+	height: 29px;
+	background: rgba(0, 0, 0, 0.4);
+	position: absolute;
+	text-align: center;
+	padding-top: 4px;
+	color: #ffffff;
+	top: -11px;
+	left: 3px;
+}
+.tekst-accessoires{
+	color: #700f3d;
+	font-size: 20px;
+}
+
+.slider-inhoud1{
+	position: absolute;
+	right: 0;
+	top: 160px;
+}
+
+.slider-tekst{
+	background: rgba(255, 255, 255, 0.8);
+	color: #5b544b;
+	font-size: 24px;
+	height: 65px;
+	padding-left: 17px;
+	padding-top: 12px;
+	width:  570px;;
+}
+
+
+.slider-tekst-caption {
+	background: rgba(111, 8, 60, 0.8);
+	color: #ffffff;
+	font-size: 14px;
+	height: 36px;
+	margin-top: -24px;
+	padding-left: 20px;
+	padding-top: 6px;
+	width: 570px;
+}
+
+.slider{
+	margin-top: 60px;
+}
+
+.google-play{
+  display: block;
+  margin-top: 30px;
+}
+
+.informatie p{
+	color: #5b544b;
+}
+
+p{
+	font-weight: 600;
+	color: #5b544b;
+}
+
+h2{
+	color: #5b544b;
+}
+
+.paars-tekst{
+	color: #700f3d;
+}
+
+
+
+@media all and (max-width: 800px){ 
+  .slider{
+    display: none;
+  }
+}
+
+@media all and (max-width: 600px){ 
+  .home-welkom-tekst h1{
+  	font-size: 26px;
+  }
+
+  .content-box-large{
+  	margin-bottom: 20px;
+  }
+
+  .content-box-large img{
+  	width: 100%;
+  }
+
+  .content-text-small{
+  	width: 98%;
+  }
+
+  .content-text{
+  	width: 98%;
+  }
+
+}

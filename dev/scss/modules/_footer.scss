@@ -1,0 +1,104 @@
+.Footer {
+	background: rgba(164, 160, 154, 0.7);
+	border-top: 15px solid #a09b94;
+	color: #ffffff;
+}
+
+.Footer p{
+	color: #ffffff;
+}
+
+// RESPONSIVE FOOTER
+.Footer-inner .widget {
+	@include span-columns(4);
+	@media screen and(max-width: 980px){
+		@include span-columns(12);
+	}
+}
+
+.Footer-inner {
+}
+
+//style the widgets
+.Footer-inner .widget {
+
+}
+
+.Socket{
+	text-align: center;
+}
+
+.Socket a{
+	color: #f9971a;
+	font-weight: bold;
+}
+
+.footer-balk{
+	width:100%;
+	background-color: #777068;
+	height: 35px;
+	padding-top: 7px;
+}
+
+.full-bg-footer{
+	background-color: #777068;
+}
+
+.footer-balk-tekst p{
+	display: inline;
+	color: #ffffff;
+}
+
+.Footer h4{
+	font-size: 16px;
+}
+
+.logo-footer{
+	position: relative;
+	top: -108px;
+	max-width: 70%;
+}
+
+.social-media-buttons{
+	position: relative;
+}
+
+.logo-facebook{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+
+.logo-twitter{
+	position: absolute;
+	bottom: 0;
+	left: 104px;
+}
+
+.social-media-responsive{
+	display: none;
+}
+
+@media all and (max-width: 600px) { 
+	.social-media-buttons {
+		display: none;
+	}
+
+	.Footer, .footer-balk-tekst{
+		text-align: center;
+	}
+
+	 .space{
+	 	display: none;
+	 }
+
+	 .social-media-responsive{
+	 	display: block;
+	 	margin-top: 30px;
+	 }
+
+	 .logo-footer{
+		display: none;
+	}
+}
