@@ -11,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- Title -->
-    <title><?php wp_title( '|', true, 'right' ); ?><?php echo get_bloginfo( 'name' ); ?></title>
+    <title><?php wp_title( '|', true, 'right' ); ?></title>
 
     <!-- Mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,6 +33,49 @@
     <!-- build:remove:compressed -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js"></script>
     <!-- /build -->
+    <?php
+
+    ?>
+
+    <?php
+    function endsWith($haystack, $needle)
+    {
+        $length = strlen($needle);
+        if ($length == 0) {
+            return true;
+        }
+
+        return (substr($haystack, -$length) === $needle);
+    }
+    ?>
+
+    <?php   if(endsWith($_SERVER['SERVER_NAME'], 'nl'))  :  ?>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-51482090-22', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+    <?php else : ?>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-51482090-23', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+    <?php endif; ?>
+
 
     <!-- Wordpress head function -->
     <?php wp_head(); ?>

@@ -15,6 +15,25 @@ Template Name: Contactpage
 				<div class="Content-text">
 
 					<div class="u-gridRow">					
+						<div class="Slider-img">
+							<img src="<?php echo get_stylesheet_directory_uri();?>/img/slider/winkel1.png">
+							<img src="<?php echo get_stylesheet_directory_uri();?>/img/slider/winkel2.png">
+							<img src="<?php echo get_stylesheet_directory_uri();?>/img/slider/winkel3.png">
+							<img src="<?php echo get_stylesheet_directory_uri();?>/img/slider/winkel4.png">
+							<img src="<?php echo get_stylesheet_directory_uri();?>/img/slider/winkel5.png">
+							<img src="<?php echo get_stylesheet_directory_uri();?>/img/slider/winkel6.png">
+							<img src="<?php echo get_stylesheet_directory_uri();?>/img/slider/winkel7.png">
+							<img src="<?php echo get_stylesheet_directory_uri();?>/img/slider/winkel8.png">
+							<img src="<?php echo get_stylesheet_directory_uri();?>/img/slider/winkel9.png">
+							<img src="<?php echo get_stylesheet_directory_uri();?>/img/slider/winkel10.png">
+						</div>
+					</div> <!-- /gridRow -->
+
+					<div class="hr-style super-margin">
+						<hr>
+					</div>
+
+					<div class="u-gridRow">					
 						<div class="adress u-gridCol4">
 							<div class="adress-info">
 								<p>C'est moi</p>

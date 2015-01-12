@@ -23,12 +23,14 @@ body {
 
 p {
   font-size: rem($t-fontSize);
+  color: #5b544b;
 }
 
 h1, h2, h3,
 h4, h5, h6 {
   font-family: $t-headerFontFamily;
   font-weight: bold;
+  color: #5b544b;
 }
 
 h1, %u-textH1 {

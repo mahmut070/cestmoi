@@ -2,6 +2,7 @@
 
 }
 
+/*Home pagina*/
 
 .home-welkom-tekst{
 	text-align: center;
@@ -12,6 +13,14 @@
 
 .home-welkom-tekst h1{
 	font-weight: normal;
+}
+
+.home-welkom-tekst p{
+	font-weight: 600;
+}
+
+.informatie p{
+	font-weight: 600;
 }
 
 .home-welkom-bedrijfsnaam{
@@ -59,9 +68,17 @@
 	left: 3px;
 }
 
-.afspraak-box{
-	margin-top: 46px;
-	position: relative;
+.afspraak-nummer{
+	width: 98%;
+	height: 49px;
+	background: #700f3d;
+	font-weight: 600;
+	position: absolute;
+	text-align: center;
+	padding-top: 4px;
+	color: #ffffff;
+	top: 140px;
+	left: 3px;
 }
 
 .content-text-small {
@@ -93,9 +110,8 @@
 	height: 65px;
 	padding-left: 17px;
 	padding-top: 12px;
-	width:  570px;;
+	width:  570px;
 }
-
 
 .slider-tekst-caption {
 	background: rgba(111, 8, 60, 0.8);
@@ -112,21 +128,7 @@
 	margin-top: 60px;
 }
 
-.google-play{
-  display: block;
-  margin-top: 30px;
-}
-
 .informatie p{
-	color: #5b544b;
-}
-
-p{
-	font-weight: 600;
-	color: #5b544b;
-}
-
-h2{
 	color: #5b544b;
 }
 
@@ -134,7 +136,78 @@ h2{
 	color: #700f3d;
 }
 
+/*<-- einde home pagina />*/
 
+
+
+
+/*Verschillende settings*/
+
+
+.afspraak-box{
+	margin-top: 109px;
+	position: relative;
+}
+
+.google-play{
+ 	 display: block;
+ 	 margin-top: 30px;
+}
+
+.qr_code{
+	width: 200px;
+	margin-top: 30px;
+}
+/*<-- einde verschillende settings/>*/
+
+
+
+
+/*Gallery settings*/
+
+
+.ngg-gallery-thumbnail-box {
+	margin-right: 25px !important;
+}
+
+.ngg-gallery-thumbnail img, .ngg-navigation a.page-numbers, .next{
+	border: 0 !important;
+
+	&:hover{
+
+		background-color: #700f3d !important;
+	}
+}
+
+.ngg-album-gallery-image-counter{
+	display: none;
+}
+
+.ngg-album-compactbox .Thumb{
+	min-width: 160px !important;
+}
+
+.ngg-album-compactbox:before{
+	display: none !important;
+}
+
+.ngg-album-compactbox:after{
+	display: none !important;	
+}
+
+.ngg-album-compactbox {
+padding: 10px 10px 8px 10px!important;
+border: 1px solid #000000 !important;
+border-radius: 3px;
+background: #ffffff;
+}
+/*<-- einde gallery settings/>*/
+
+@media all and (max-width: 1200px){ 
+  .afspraak-nummer{
+    display: none;
+  }
+}
 
 @media all and (max-width: 800px){ 
   .slider{
@@ -161,6 +234,10 @@ h2{
 
   .content-text{
   	width: 98%;
+  }
+
+.ngg-gallery-thumbnail-box {
+  	margin-left: 17%;
   }
 
 }

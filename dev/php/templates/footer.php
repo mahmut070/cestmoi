@@ -18,15 +18,15 @@
 				<div class="u-gridCol3 social-media-buttons">
 					<a href="/home"><img class="logo-footer" src="<?php echo get_stylesheet_directory_uri();?>/img/logo.png"></a>
 				
-					<a href="/home"><img class="logo-facebook" src="<?php echo get_stylesheet_directory_uri();?>/img/facebook.svg"></a>
-					<a href="/home"><img class="logo-twitter" src="<?php echo get_stylesheet_directory_uri();?>/img/twitter.svg"></a>
+					<!--<a href="/home"><img class="logo-facebook" src="<?php echo get_stylesheet_directory_uri();?>/img/facebook.svg"></a>
+					<a href="/home"><img class="logo-twitter" src="<?php echo get_stylesheet_directory_uri();?>/img/twitter.svg"></a>-->
 
 				</div>
 
 
 				<div class="u-gridCol3 social-media-responsive">
-					<a href="/home"><img  src="<?php echo get_stylesheet_directory_uri();?>/img/facebook.svg"></a>
-					<a href="/home"><img  src="<?php echo get_stylesheet_directory_uri();?>/img/twitter.svg"></a>
+					<!--<a href="/home"><img  src="<?php echo get_stylesheet_directory_uri();?>/img/facebook.svg"></a>
+					<a href="/home"><img  src="<?php echo get_stylesheet_directory_uri();?>/img/twitter.svg"></a>-->
 
 				</div>
 
@@ -61,7 +61,7 @@
 		<div class="u-gridContainer">
 			<!-- Copyright info -->
 			<p>&copy; <?php bloginfo('name'); ?> <?php echo date("Y"); ?> - Website & SEO door 
-					<a href="http://www.lokaalgevonden.nl" target="_blank">LokaalGevonden</a>
+					<a href="http://www.lokaalgevonden.nl" target="_blank"><span class="lg-blauw">Lokaal</span>Gevonden</a>
 			</p>
 		</div>
 	</div>

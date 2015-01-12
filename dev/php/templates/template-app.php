@@ -17,14 +17,15 @@ Template Name: App page
 					</aside>
 					<article class="Content-article u-gridCol8" id="post-<?php the_ID(); ?>">
 						<?php // the_content(); ?>
+						<p>
 						Bekijk nu ook de informatie van ons bedrijf vanuit de app! De app is beschikbaar in Google Play voor Android apparaten en als webapp voor iOS van Apple telefoons.
 
 						Voor Apple iPhone gebruikers: scan de QR-code of surf naar de website. 
+						</p>
+						<a href="https://play.google.com/store/apps/details?id=com.wCestmoibruidsmode" target="_blank" class="google-play"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/play.png"/></a>
 
-						<a href="" class="google-play"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/play.png"/></a>
 
-
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/qr_code.png" />
+						<img class="qr_code" src="<?php echo get_stylesheet_directory_uri(); ?>/img/qr_code.png" />
 
 						<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
 					</article>

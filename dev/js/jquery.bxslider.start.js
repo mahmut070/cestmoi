@@ -13,7 +13,7 @@ jQuery(document).ready(function($) {
 
     pause: 4000,
     auto: true,
-    speed: 1500,
+    speed: 4000,
     infiniteLoop: true,
     hideControlOnEnd: false,
     touchEnabled: true,

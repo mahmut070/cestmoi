@@ -20,7 +20,7 @@
     slideSelector: '',
     infiniteLoop: true,
     hideControlOnEnd: false,
-    speed: 300,
+    speed: 500,
     easing: null,
     slideMargin: 0,
     startSlide: 0,
